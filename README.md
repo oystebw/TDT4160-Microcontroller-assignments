@@ -1,5 +1,5 @@
 # TDT4160-Microcontroller-assignments
  Autumn 22'
 
-Assignment 1 and 2: Assembly (ARM Thumb-2)
+Assignment 1 and 2: Assembly (ARM Thumb-2) \n
 Assignment 3: C
