@@ -9,8 +9,6 @@
 	
 Start:
 
-    // Skriv din kode her...
-
 #Konfigurerer SYSTICK_CTRL
 LDR R0, =SYSTICK_BASE
 LDR R1, [R0]
@@ -124,5 +122,5 @@ END_MINUTES:
 END:
 BX LR
 
-NOP // Behold denne på bunnen av fila
+NOP
 

@@ -2,10 +2,7 @@
 #include "gpio.h"
 #include "systick.h"
 
-/**************************************************************************//**
- * @brief Konverterer nummer til string 
- * Konverterer et nummer mellom 0 og 99 til string
- *****************************************************************************/
+
 void int_to_string(char *timestamp, unsigned int offset, int i) {
     if (i > 99) {
         timestamp[offset]   = '9';
@@ -25,14 +22,6 @@ void int_to_string(char *timestamp, unsigned int offset, int i) {
     }
 }
 
-/**************************************************************************//**
- * @brief Konverterer 3 tall til en timestamp-string
- * timestamp-argumentet må være et array med plass til (minst) 7 elementer.
- * Det kan deklareres i funksjonen som kaller som "char timestamp[7];"
- * Kallet blir dermed:
- * char timestamp[7];
- * time_to_string(timestamp, h, m, s);
- *****************************************************************************/
 void time_to_string(char *timestamp, int h, int m, int s) {
     timestamp[0] = '0';
     timestamp[1] = '0';
@@ -267,7 +256,7 @@ void tilstand_5() {
 
 int main(void) {
     init();
-    // Skriv din kode her...
+
     set_led();
     set_btn0();
     set_btn1();

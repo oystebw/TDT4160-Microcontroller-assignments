@@ -48,5 +48,5 @@ LED_OFF:
 	STR R3, [R1]
 	B LOOP
 
-NOP // Behold denne på bunnen av fila
+NOP
 
